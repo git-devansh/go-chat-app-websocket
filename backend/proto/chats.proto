@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package proto;
+
+option go_package = "./";
+
+message Message {
+    string message = 1;
+}
+
+message Chats {
+    repeated string chats = 1;
+}
+
+message NoParam{};
+
+service ChatService {
+    rpc AddMessage(Message) returns (Message);
+    rpc GetChats(NoParam) returns (Chats);
+}
