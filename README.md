@@ -1,4 +1,4 @@
-# go-chat-app-websokect
+# go-chat-app-websocket
 
 Websocket client able to connect to the backend server. Users can send messages to other clients connected to the same server.
 
